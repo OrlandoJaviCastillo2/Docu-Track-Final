@@ -1,0 +1,27 @@
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import { getToken } from '../utils/auth';
+
+export default function ProtectedRoute({ children, requiredRole }) {
+  const router = useRouter();
+  const token = getToken();
+  const userRole = localStorage.getItem('userRole');
+
+  useEffect(() => {
+    if (!token) {
+      router.push('/login');
+      return;
+    }
+
+    if (requiredRole && userRole !== requiredRole) {
+      router.push('/unauthorized');
+      return;
+    }
+  }, [token, userRole, requiredRole, router]);
+
+  if (!token || (requiredRole && userRole !== requiredRole)) {
+    return <div>Loading...</div>;
+  }
+
+  return children;
+}

@@ -1,0 +1,20 @@
+
+============================================================
+CERTIFICADO DE NACIMIENTO - DOCUMENTO OFICIAL
+============================================================
+
+INFORMACIÓN DEL TITULAR:
+• Nombre completo: Carlos Judas
+• Número de identidad: 23-456-78
+• Fecha de nacimiento: 27/01/2000
+
+INFORMACIÓN DEL CERTIFICADO:
+• UUID: d2415469-3da8-4741-bc18-473c29d6fa11
+• Estado: Emitido
+• Fecha de emisión: 27/08/2025 19:44:43
+
+============================================================
+DOCUMENTO VÁLIDO PARA TRÁMITES OFICIALES
+Sistema DocuTrack - Certificación Digital
+============================================================
+        
